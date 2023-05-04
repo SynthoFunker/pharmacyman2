@@ -73,9 +73,39 @@ namespace pharmacyp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap b2p6bu5n {
+            get {
+                object obj = ResourceManager.GetObject("b2p6bu5n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit_sign_50px {
+            get {
+                object obj = ResourceManager.GetObject("exit_sign_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home__1_ {
             get {
                 object obj = ResourceManager.GetObject("home (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home_ic {
+            get {
+                object obj = ResourceManager.GetObject("home_ic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +123,39 @@ namespace pharmacyp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_data_backup_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-data-backup-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_delete_25px {
             get {
                 object obj = ResourceManager.GetObject("icons8_delete_25px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_eye_25px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_eye_25px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_invisible_25px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_invisible_25px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +183,9 @@ namespace pharmacyp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap miscellaneous {
+        internal static System.Drawing.Bitmap icons8_Users_25px {
             get {
-                object obj = ResourceManager.GetObject("miscellaneous", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_Users_25px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +193,9 @@ namespace pharmacyp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap remove_from_cart {
+        internal static System.Drawing.Bitmap Report {
             get {
-                object obj = ResourceManager.GetObject("remove-from-cart", resourceCulture);
+                object obj = ResourceManager.GetObject("Report", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +203,9 @@ namespace pharmacyp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap remove_from_cart1 {
+        internal static System.Drawing.Bitmap selling {
             get {
-                object obj = ResourceManager.GetObject("remove-from-cart1", resourceCulture);
+                object obj = ResourceManager.GetObject("selling", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +213,9 @@ namespace pharmacyp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap seo_report {
+        internal static System.Drawing.Bitmap Settingss {
             get {
-                object obj = ResourceManager.GetObject("seo-report", resourceCulture);
+                object obj = ResourceManager.GetObject("Settingss", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +223,19 @@ namespace pharmacyp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap trade {
+        internal static System.Drawing.Bitmap shutdown_50px {
             get {
-                object obj = ResourceManager.GetObject("trade", resourceCulture);
+                object obj = ResourceManager.GetObject("shutdown_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Storagepng {
+            get {
+                object obj = ResourceManager.GetObject("Storagepng", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

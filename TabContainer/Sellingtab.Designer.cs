@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace pharmacyp.TabContainer
 {
@@ -33,236 +34,308 @@ namespace pharmacyp.TabContainer
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.sellbtn = new Guna.UI2.WinForms.Guna2Button();
+            this.lbltotal = new System.Windows.Forms.Label();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.selling_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.decrement = new System.Windows.Forms.DataGridViewImageColumn();
-            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.increment = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.medbox = new System.Windows.Forms.TextBox();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.barbox = new System.Windows.Forms.TextBox();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.increment = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.decrement = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.medbox);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1434, 68);
+            this.panel4.TabIndex = 8;
+            this.panel4.TabStop = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.sellbtn);
+            this.panel3.Controls.Add(this.lbltotal);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 590);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1434, 83);
+            this.panel3.TabIndex = 7;
+            // 
+            // sellbtn
+            // 
+            this.sellbtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.sellbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.sellbtn.BorderRadius = 22;
+            this.sellbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.sellbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.sellbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.sellbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.sellbtn.FillColor = System.Drawing.Color.SeaGreen;
+            this.sellbtn.Font = new System.Drawing.Font("Rudaw", 16.2F, System.Drawing.FontStyle.Bold);
+            this.sellbtn.ForeColor = System.Drawing.Color.White;
+            this.sellbtn.Location = new System.Drawing.Point(735, 45);
+            this.sellbtn.Name = "sellbtn";
+            this.sellbtn.Size = new System.Drawing.Size(300, 39);
+            this.sellbtn.TabIndex = 3;
+            this.sellbtn.TabStop = false;
+            this.sellbtn.Text = "فــــــرۆشــــــتـــــــن";
+            this.sellbtn.Click += new System.EventHandler(this.Sellbtn_Click);
+            // 
+            // lbltotal
+            // 
+            this.lbltotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbltotal.AutoSize = true;
+            this.lbltotal.Font = new System.Drawing.Font("Rudaw", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotal.Location = new System.Drawing.Point(794, 3);
+            this.lbltotal.Name = "lbltotal";
+            this.lbltotal.Size = new System.Drawing.Size(181, 39);
+            this.lbltotal.TabIndex = 4;
+            this.lbltotal.Text = "کــــۆی گشتی";
             // 
             // reportViewer1
             // 
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "pharmacyp.Report1.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(20, 71);
+            this.reportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "pharmacyp.Sellingreport.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(723, 68);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.ShowToolBar = false;
-            this.reportViewer1.Size = new System.Drawing.Size(315, 406);
-            this.reportViewer1.TabIndex = 0;
+            this.reportViewer1.Size = new System.Drawing.Size(428, 510);
+            this.reportViewer1.TabIndex = 10;
+            this.reportViewer1.WaitControlDisplayAfter = 500;
+            this.reportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
             // 
-            // guna2DataGridView1
+            // label1
             // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            this.guna2DataGridView1.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 36;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.name,
-            this.selling_price,
-            this.decrement,
-            this.quantity,
-            this.increment,
-            this.delete});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(414, 111);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 26;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(547, 150);
-            this.guna2DataGridView1.TabIndex = 1;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 36;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 26;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Rudaw", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(1033, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 39);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "بارکۆد";
             // 
-            // id
+            // textBox1
             // 
-            this.id.HeaderText = "id";
-            this.id.MinimumWidth = 6;
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Visible = false;
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.textBox1.Location = new System.Drawing.Point(781, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(232, 38);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Barbox_KeyPress);
             // 
-            // name
+            // label2
             // 
-            this.name.FillWeight = 152.8699F;
-            this.name.HeaderText = "ناوی دەرمان";
-            this.name.MinimumWidth = 6;
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Rudaw", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(567, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(151, 39);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "ناوی دەرمان";
             // 
-            // selling_price
+            // medbox
             // 
-            this.selling_price.FillWeight = 152.8699F;
-            this.selling_price.HeaderText = "بڕی پارە";
-            this.selling_price.MinimumWidth = 6;
-            this.selling_price.Name = "selling_price";
-            this.selling_price.ReadOnly = true;
-            // 
-            // decrement
-            // 
-            this.decrement.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.decrement.HeaderText = "-";
-            this.decrement.Image = global::pharmacyp.Properties.Resources.icons8_minus_25px;
-            this.decrement.MinimumWidth = 6;
-            this.decrement.Name = "decrement";
-            this.decrement.ReadOnly = true;
-            this.decrement.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.decrement.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.decrement.Width = 40;
-            // 
-            // quantity
-            // 
-            this.quantity.FillWeight = 66.67393F;
-            this.quantity.HeaderText = "ڕێژە/بڕ";
-            this.quantity.MinimumWidth = 6;
-            this.quantity.Name = "quantity";
-            this.quantity.ReadOnly = true;
-            // 
-            // increment
-            // 
-            this.increment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.increment.FillWeight = 27.58621F;
-            this.increment.HeaderText = "+";
-            this.increment.Image = global::pharmacyp.Properties.Resources.icons8_Plus_25px;
-            this.increment.MinimumWidth = 6;
-            this.increment.Name = "increment";
-            this.increment.ReadOnly = true;
-            this.increment.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.increment.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.increment.Width = 28;
+            this.medbox.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.medbox.Location = new System.Drawing.Point(329, 13);
+            this.medbox.Name = "medbox";
+            this.medbox.Size = new System.Drawing.Size(232, 38);
+            this.medbox.TabIndex = 3;
+            this.medbox.TextChanged += new System.EventHandler(this.medbox_TextChanged);
             // 
             // delete
             // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.delete.HeaderText = "ڕەشکردنەوە";
-            this.delete.Image = global::pharmacyp.Properties.Resources.icons8_delete_25px;
+            this.delete.FillWeight = 60.72731F;
+            this.delete.HeaderText = "";
             this.delete.MinimumWidth = 6;
             this.delete.Name = "delete";
             this.delete.ReadOnly = true;
-            this.delete.Width = 101;
             // 
-            // barbox
+            // increment
             // 
-            this.barbox.Location = new System.Drawing.Point(597, 375);
-            this.barbox.Name = "barbox";
-            this.barbox.Size = new System.Drawing.Size(100, 24);
-            this.barbox.TabIndex = 2;
-            this.barbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Sellingtab_KeyPress);
+            this.increment.FillWeight = 53.87784F;
+            this.increment.HeaderText = "";
+            this.increment.MinimumWidth = 6;
+            this.increment.Name = "increment";
+            this.increment.ReadOnly = true;
             // 
-            // dataGridViewImageColumn1
+            // Quantity
             // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dataGridViewImageColumn1.HeaderText = "-";
-            this.dataGridViewImageColumn1.Image = global::pharmacyp.Properties.Resources.icons8_minus_25px;
-            this.dataGridViewImageColumn1.MinimumWidth = 6;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewImageColumn1.Width = 125;
+            this.Quantity.FillWeight = 70F;
+            this.Quantity.HeaderText = "ڕێژە/عدد";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
             // 
-            // dataGridViewImageColumn2
+            // decrement
             // 
-            this.dataGridViewImageColumn2.FillWeight = 27.58621F;
-            this.dataGridViewImageColumn2.HeaderText = "+";
-            this.dataGridViewImageColumn2.Image = global::pharmacyp.Properties.Resources.icons8_Plus_25px;
-            this.dataGridViewImageColumn2.MinimumWidth = 6;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewImageColumn2.Width = 28;
+            this.decrement.FillWeight = 46.43103F;
+            this.decrement.HeaderText = "";
+            this.decrement.MinimumWidth = 6;
+            this.decrement.Name = "decrement";
+            this.decrement.ReadOnly = true;
             // 
-            // dataGridViewImageColumn3
+            // Price
             // 
-            this.dataGridViewImageColumn3.HeaderText = "ڕەشکردنەوە";
-            this.dataGridViewImageColumn3.Image = global::pharmacyp.Properties.Resources.icons8_delete_25px;
-            this.dataGridViewImageColumn3.MinimumWidth = 6;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.Width = 101;
+            this.Price.FillWeight = 139.268F;
+            this.Price.HeaderText = "نرخ";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
+            // 
+            // Dname
+            // 
+            this.Dname.FillWeight = 139.268F;
+            this.Dname.HeaderText = "ناوی دەرمان";
+            this.Dname.MinimumWidth = 6;
+            this.Dname.Name = "Dname";
+            this.Dname.ReadOnly = true;
+            // 
+            // DID
+            // 
+            this.DID.HeaderText = "DID";
+            this.DID.MinimumWidth = 6;
+            this.DID.Name = "DID";
+            this.DID.ReadOnly = true;
+            this.DID.Visible = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.Table;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gadugi", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(221)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rabar_019", 11F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(221)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.ColumnHeadersHeight = 32;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DID,
+            this.Dname,
+            this.Price,
+            this.decrement,
+            this.Quantity,
+            this.increment,
+            this.delete});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Gadugi", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dataGridView1.Enabled = false;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 68);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.RowTemplate.Height = 26;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(717, 522);
+            this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.TabStop = false;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // Sellingtab
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.barbox);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
             this.Margin = new System.Windows.Forms.Padding(0);
-            this.MaximumSize = new System.Drawing.Size(1871, 1036);
-            this.MinimumSize = new System.Drawing.Size(1654, 1036);
             this.Name = "Sellingtab";
-            this.Size = new System.Drawing.Size(1871, 1036);
-            this.Load += new System.EventHandler(this.Sellingtab_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Sellingtab_KeyPress);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.Size = new System.Drawing.Size(1434, 673);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private System.Windows.Forms.TextBox barbox;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn selling_price;
-        private System.Windows.Forms.DataGridViewImageColumn decrement;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
-        private System.Windows.Forms.DataGridViewImageColumn increment;
-        private System.Windows.Forms.DataGridViewImageColumn delete;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2Button sellbtn;
+        private System.Windows.Forms.Label lbltotal;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private TextBox medbox;
+        private Label label2;
+        private TextBox textBox1;
+        private Label label1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private DataGridViewImageColumn delete;
+        private DataGridViewImageColumn increment;
+        private DataGridViewTextBoxColumn Quantity;
+        private DataGridViewImageColumn decrement;
+        private DataGridViewTextBoxColumn Price;
+        private DataGridViewTextBoxColumn Dname;
+        private DataGridViewTextBoxColumn DID;
+        private DataGridView dataGridView1;
     }
 }

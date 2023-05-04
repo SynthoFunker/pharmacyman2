@@ -26,11 +26,21 @@ namespace pharmacyp.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Han\\Documents\\PharDB" +
-            ".mdf;Integrated Security=True;Connect Timeout=30")]
-        public string PharDBConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Han\\Documents\\PharD.accdb")]
+        public string PharDCS {
             get {
-                return ((string)(this["PharDBConnectionString"]));
+                return ((string)(this["PharDCS"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\Miscellaneous\\PharD" +
+            ".accdb;Persist Security Info=True")]
+        public string PharDConnectionString {
+            get {
+                return ((string)(this["PharDConnectionString"]));
             }
         }
     }

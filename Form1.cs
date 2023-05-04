@@ -10,23 +10,16 @@ using System.Windows.Forms;
 
 namespace pharmacyp
 {
-    public partial class login : Form
+    public partial class Form1 : Form
     {
-        public login()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-        }
-
-        private void lgnbtn_Click(object sender, EventArgs e)
-        {
-            mainform m = new mainform();
-            m.Show();
-            this.Hide();
         }
     }
 }
